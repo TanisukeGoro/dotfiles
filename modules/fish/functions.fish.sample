@@ -1,0 +1,71 @@
+# write your settings!
+
+# function logo
+#     echo '                 '(set_color F00)'___
+#   ___======____='(set_color FF7F00)'-'(set_color FF0)'-'(set_color FF7F00)'-='(set_color F00)')
+# /T            \_'(set_color FF0)'--='(set_color FF7F00)'=='(set_color F00)')
+# [ \ '(set_color FF7F00)'('(set_color FF0)'0'(set_color FF7F00)')   '(set_color F00)'\~    \_'(set_color FF0)'-='(set_color FF7F00)'='(set_color F00)')
+#  \      / )J'(set_color FF7F00)'~~    \\'(set_color FF0)'-='(set_color F00)')
+#   \\\\___/  )JJ'(set_color FF7F00)'~'(set_color FF0)'~~   '(set_color F00)'\)
+#    \_____/JJJ'(set_color FF7F00)'~~'(set_color FF0)'~~    '(set_color F00)'\\
+#    '(set_color FF7F00)'/ '(set_color FF0)'\  '(set_color FF0)', \\'(set_color F00)'J'(set_color FF7F00)'~~~'(set_color FF0)'~~     '(set_color FF7F00)'\\
+#   (-'(set_color FF0)'\)'(set_color F00)'\='(set_color FF7F00)'|'(set_color FF0)'\\\\\\'(set_color FF7F00)'~~'(set_color FF0)'~~       '(set_color FF7F00)'L_'(set_color FF0)'_
+#   '(set_color FF7F00)'('(set_color F00)'\\'(set_color FF7F00)'\\)  ('(set_color FF0)'\\'(set_color FF7F00)'\\\)'(set_color F00)'_           '(set_color FF0)'\=='(set_color FF7F00)'__
+#    '(set_color F00)'\V    '(set_color FF7F00)'\\\\'(set_color F00)'\) =='(set_color FF7F00)'=_____   '(set_color FF0)'\\\\\\\\'(set_color FF7F00)'\\\\
+#           '(set_color F00)'\V)     \_) '(set_color FF7F00)'\\\\'(set_color FF0)'\\\\JJ\\'(set_color FF7F00)'J\)
+#                       '(set_color F00)'/'(set_color FF7F00)'J'(set_color FF0)'\\'(set_color FF7F00)'J'(set_color F00)'T\\'(set_color FF7F00)'JJJ'(set_color F00)'J)
+#                       (J'(set_color FF7F00)'JJ'(set_color F00)'| \UUU)
+#                        (UU)'(set_color normal)
+# end
+
+# function peco_z
+#     set -l query (commandline)
+
+#     if test -n $query
+#         set peco_flags --query "$query"
+#     end
+
+#     z -l | peco $peco_flags --layout=bottom-up | awk '{ print $2 }' | read recent
+#     if [ $recent ]
+#         cd $recent
+#         commandline -r ''
+#         commandline -f repaint
+#     end
+# end
+
+# function peco_ghq
+#     set -l query (commandline)
+
+#     if test -n $query
+#         set peco_flags --query "$query"
+#     end
+
+#     ghq list --full-path | peco $peco_flags --layout=bottom-up | read recent
+#     if [ $recent ]
+#         cd $recent
+#         commandline -r ''
+#         commandline -f repaint
+#     end
+# end
+
+# function fish_user_key_bindings
+#     bind \cr 'peco_select_history (commandline -b)'
+#     bind \co peco_ghq
+#     bind \cq peco_z
+# end
+
+# function ghq_all
+#     curl "https://api.github.com/users/"(echo $argv)"/repos" | jq -r ".[].clone_url" | xargs -L1 ghq get
+# end
+
+# function ghq_remove_all
+#     ghq list --full-path | grep -E "/"(echo $argv)"/" | xargs -L1 rm -fr
+# end
+
+# function ghq_user
+#     ghq list --full-path | grep github.com | awk -F 'github.com/' '{print $2}' | awk -F '/' '{print $1}' | sort | uniq
+# end
+
+# function snow
+#     ruby -e 'C=`stty size`.scan(/\d+/)[1].to_i;S=["2743".to_i(16)].pack("U*");a={};puts "\033[2J";loop{a[rand(C)]=0;a.each{|x,o|;a[x]+=1;print "\033[#{o};#{x}H \033[#{a[x]};#{x}H#{S} \033[0;0H"};$stdout.flush;sleep 0.1}'
+# end

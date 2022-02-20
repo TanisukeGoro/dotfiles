@@ -1,0 +1,8 @@
+aquaskk
+basictex
+chromedriver
+docker
+ngrok
+pgadmin4
+sequel-ace
+temurin

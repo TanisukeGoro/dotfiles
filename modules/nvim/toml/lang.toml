@@ -72,3 +72,6 @@ on_ft = ['tmuxconf']
 hook_add = '''
 au BufRead,BufNewFile dot.tmux.conf setf tmuxconf
 '''
+
+[[plugins]]
+repo = 'jwalton512/vim-blade'

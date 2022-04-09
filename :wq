@@ -62,6 +62,7 @@ set ignorecase
 set smartcase
 
 syntax on
+colorscheme darkblue
 
 " keymap
 let mapleader = ','
@@ -109,4 +110,5 @@ let g:ctrlp_abbrev = {
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
+
 

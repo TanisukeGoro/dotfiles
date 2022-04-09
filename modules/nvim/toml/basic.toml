@@ -28,7 +28,19 @@ source ~/.config/nvim/plugins/coc.vim
 '''
 
 [[plugins]]
-repo = 'Shougo/denite.nvim'
-hook_add = '''
-source ~/.config/nvim/plugins/denite.vim
-'''
+repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'sonph/onehalf'
+
+[[plugins]]
+repo = 'ulwlu/elly.vim'

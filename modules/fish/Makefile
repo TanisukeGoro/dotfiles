@@ -56,9 +56,8 @@ $(FISH_CONFIG_DIR):
 	ln -sf $(SELF_FISH_DIR)/conf.d/fish.fish $(FISH_CONFIG_DIR)/fish.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/go.fish $(FISH_CONFIG_DIR)/go.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/mac.fish $(FISH_CONFIG_DIR)/mac.fish
-	ln -sf $(SELF_FISH_DIR)/conf.d/mysql.fish $(FISH_CONFIG_DIR)/mysql.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/node.fish $(FISH_CONFIG_DIR)/node.fish
-	ln -sf $(SELF_FISH_DIR)/conf.d/python.fish $(FISH_CONFIG_DIR)/python.fish
+	ln -sf $(SELF_FISH_DIR)/conf.d/python.fish $(FISH_CONFIG_DIR)/.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/ruby.fish $(FISH_CONFIG_DIR)/ruby.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/rust.fish $(FISH_CONFIG_DIR)/rust.fish
 	ln -sf $(SELF_FISH_DIR)/conf.d/shell.fish $(FISH_CONFIG_DIR)/shell.fish

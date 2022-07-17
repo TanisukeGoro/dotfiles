@@ -1,6 +1,4 @@
 amazon-ecs-cli
-aom
-autoconf
 automake
 awscli
 bash-completion

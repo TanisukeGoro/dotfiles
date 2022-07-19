@@ -1,4 +1,3 @@
-# new Mac
 ## nvim install and clean
 
 ```bash

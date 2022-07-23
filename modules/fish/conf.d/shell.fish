@@ -28,8 +28,8 @@ if type -q dust
 end
 
 # browse git remote repository
-if type -q hub
-    alias gitbr="hub browse"
+if type -q gh
+    alias gitbr="gh browse"
 end
 
 # for texcount

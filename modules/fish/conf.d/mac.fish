@@ -6,12 +6,16 @@ if test (uname) = "Darwin"
     # brew setting
     set -x HOMEBREW_NO_AUTO_UPDATE 1
 
+    # brew sbin setting
+    fish_add_path "/opt/homebrew/bin"
+    fish_add_path "/opt/homebrew/sbin"
+
     # for gettext
     set -gx LDFLAGS "-L/usr/local/opt/gettext/lib"
     set -gx CPPFLAGS "-I/usr/local/opt/gettext/include"
     set -g fish_user_paths "/usr/local/opt/gettext/bin" $fish_user_paths
     fish_add_path "/opt/homebrew/bin"
-    set -x GPG_TTY (tty) 
+    set -x GPG_TTY (tty)
 
     # openssl@1.1
     set -g fish_user_paths "/usr/local/opt/openssl@1.1/bin" $fish_user_paths

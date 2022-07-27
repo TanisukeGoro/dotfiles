@@ -18,9 +18,6 @@ repo = 'mattn/emmet-vim'
 repo = 'chrisbra/csv.vim'
 
 [[plugins]]
-repo = 'mattn/vim-sl'
-
-[[plugins]]
 repo = 'neoclide/coc.nvim'
 build = 'coc#util#install()'
 hook_add = '''

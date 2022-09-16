@@ -27,6 +27,7 @@ $(FISH_DIR):
 	mkdir -p $(FISH_DIR)
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
 	ln -sf $(SELF_FISH_DIR)/fish_plugins $(FISH_DIR)/fish_plugins
+	ln -sf $(SELF_FISH_DIR)/chefrepi.fish $(FISH_DIR)/chefrepi.fish
 
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)

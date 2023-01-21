@@ -2,6 +2,7 @@
     "workbench.editor.showTabs": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.labelFormat": "medium",
     "workbench.tree.indent": 16,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
@@ -76,16 +77,6 @@
     // Latexでも動作するようにする
     // ref : https://github.com/Gruntfuggly/todo-tree/issues/129
     "todo-tree.regex.regex": "((//|#|%|<!--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])",
-    "terraform.indexing": {
-        "enabled": false,
-        "liveIndexing": false,
-        "delay": 500,
-        "exclude": [".terraform/**/*", "**/.terraform/**/*"]
-    },
-    "terraform.languageServer": {
-        "external": true,
-        "args": ["serve"]
-    },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "code-runner.clearPreviousOutput": true,
@@ -347,10 +338,11 @@
     "editor.rulers": [120],
     // VScodeのVim拡張機能で通常モードに戻ったときに自動で半角英数にする
     // https://qiita.com/tea-red/items/23dfc89edc11ecdced03
-    "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
-    "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
-    "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+    // 2023-01-18 あまりにも挙動が不安定なので、karabiner-Elements のC+[ で英数キーを送信する設定を行なった
+    // "vim.autoSwitchInputMethod.enable": true,
+    // "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
+    // "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+    // "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
         {
@@ -384,38 +376,19 @@
         "*.liquid": "liquid",
         "*.vim": "vimrc"
     },
-    "liquid.format": true,
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "outline.showVariables": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "mssql.connections": [
-        {
-            "server": "{{put-server-name-here}}",
-            "database": "{{put-database-name-here}}",
-            "user": "{{put-username-here}}",
-            "password": "{{put-password-here}}"
-        }
-    ],
     "editor.formatOnType": true,
     "tabnine.experimentalAutoImports": true,
     "deepl.apiKey": null,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "git.autofetch": true,
     "editor.inlineSuggest.enabled": true,
-    "editor.minimap.enabled": false,
-    "github.copilot.enable": {
-        "*": false,
-        "yaml": false,
-        "plaintext": false,
-        "markdown": false,
-        "php": false
-    },
     "[blade]": {
-        "editor.defaultFormatter": "onecentlin.laravel-blade"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "search.searchOnType": false,
-    "phpstan.timeout": 200000,
-    "phpstan.suppressTimeoutMessage": true,
     "editor.guides.highlightActiveIndentation": false,
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
@@ -424,5 +397,96 @@
     "php.suggest.basic": false,
     "php.validate.enable": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.minimap.enabled": false,
+    "cSpell.ignoreWords": [
+        "Cuit",
+        "Gnikyt",
+        "KAMPO",
+        "MMDD",
+        "SAISON",
+        "Sampo",
+        "Spatie",
+        "barryvdh",
+        "blinkmacsystemfont",
+        "chefrepi",
+        "datetime",
+        "grayout",
+        "howto",
+        "idempotency",
+        "kamei",
+        "lazysizes",
+        "myrepo",
+        "myshopify",
+        "phpstan",
+        "prefcode",
+        "saumon",
+        "skus",
+        "stylelint",
+        "unveilhooks",
+        "vinaigre",
+        "yamato"
+    ],
+    "workbench.editor.enablePreview": false,
+    "cSpell.userWords": [
+        "arrachera",
+        "Arrayable",
+        "atsushi",
+        "azuma",
+        "bresaise",
+        "carotte",
+        "chocolat",
+        "Cookpit",
+        "escabeche",
+        "exif",
+        "filesystems",
+        "fukuda",
+        "ginpei",
+        "inada",
+        "ishii",
+        "kazuhiro",
+        "kazunari",
+        "kouji",
+        "Laravel",
+        "lazyload",
+        "markdwon",
+        "Mizobuchi",
+        "mozjpeg",
+        "muffaldine",
+        "mypage",
+        "nakamura",
+        "nekonome",
+        "Ovgo",
+        "piperade",
+        "poelee",
+        "poivre",
+        "porc",
+        "Queueable",
+        "rapees",
+        "redirector",
+        "ropia",
+        "ruleset",
+        "salsiccia",
+        "sato",
+        "sekiguchi",
+        "shimizu",
+        "shunsuke",
+        "squoosh",
+        "taragi",
+        "Tokenable",
+        "tomoko",
+        "yamamoto",
+        "yukihide"
+    ],
+    "editor.formatOnPaste": true,
+    "editor.fontSize": 11,
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders",
+        "composer.json"
+    ],
     "diffEditor.ignoreTrimWhitespace": false
 }

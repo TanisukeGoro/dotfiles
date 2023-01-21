@@ -1,4 +1,4 @@
 bind status C	>git commit
 bind status P	>git push origin
 bind status G   >gitbr
-
+bind status F   >git fixit

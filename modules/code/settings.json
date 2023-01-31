@@ -1,0 +1,492 @@
+{
+    "workbench.editor.showTabs": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.labelFormat": "medium",
+    "workbench.tree.indent": 16,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.colorTheme": "Default High Contrast",
+    "markdown-preview-github-styles.colorTheme": "light",
+    "explorer.confirmDelete": false,
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.bracketPairColorization.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "git.confirmSync": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.tabCompletion": "on",
+    "html.format.preserveNewLines": false,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": [
+        "source.organizeImports",
+        "source.fixAll.eslint"
+    ],
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.quickSuggestionsDelay": 10,
+    "terminal.integrated.rendererType": "dom",
+    "editor.tabSize": 2,
+    "intelephense.diagnostics.undefinedClassConstants": false,
+    "intelephense.diagnostics.undefinedConstants": false,
+    "intelephense.diagnostics.undefinedFunctions": false,
+    "intelephense.diagnostics.undefinedMethods": false,
+    "intelephense.diagnostics.undefinedProperties": false,
+    "intelephense.diagnostics.undefinedTypes": false,
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.allowRisky": true,
+    "javascript.format.enable": false,
+    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', monospace",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "[ ]": {
+            "background": "#ff000080"
+        },
+        "[x]": {
+            "background": "#00ff0080"
+        }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "tag",
+        "foreground": "#cccccc",
+        "background": "#3d8cd6",
+        "opacity": 60
+    },
+    // Latexでも動作するようにする
+    // ref : https://github.com/Gruntfuggly/todo-tree/issues/129
+    "todo-tree.regex.regex": "((//|#|%|<!--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.lineNumbers": "relative",
+
+    /* latex用の設定
+     * https://qiita.com/popunbom/items/7d02fc75ad23b735d28c
+     * https://qiita.com/skyloken/items/bb602494317ba0daa11f
+     */
+
+    // editor.wordSeparators: 単語単位での移動を行う場合の区切り文字を指定
+    // 日本語文書で単語移動を使うため、助詞や読点、括弧を区切り文字として指定する
+    "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~? 、。「」【】『』（）！？てにをはがのともへでや",
+
+    // 設定: LaTeX Workshop
+
+    // LaTeX Workshop ではビルド設定を「Tool」と「Recipe」という2つで考える
+    //   Tool: 実行される1つのコマンド。コマンド (command) と引数 (args) で構成される
+    //   Recipe: Tool の組み合わわせを定義する。Tool の組み合わせ (tools) で構成される。
+    //           tools の中で利用される Tool は "latex-workshop.latex.tools" で定義されている必要がある。
+
+    // latex-workshop.latex.tools: Tool の定義
+    "latex-workshop.latex.tools": [
+        // latexmk を利用した lualatex によるビルドコマンド
+        {
+            "name": "Latexmk (LuaLaTeX)",
+            "command": "latexmk",
+            "args": [
+                "-f",
+                "-gg",
+                "-pv",
+                "-lualatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        // makeファイル経由でビルドを行った時
+        {
+            "name": "LuaLaTex (Makefile)",
+            "command": "make",
+            "args": ["draft"]
+            // "args": [
+            //   "-f", "-gg", "-pv", "-lualatex", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
+            // ]
+        },
+        {
+            "name": "Latexmk (pdflatex)",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        // latexmk を利用した xelatex によるビルドコマンド
+        {
+            "name": "Latexmk (XeLaTeX)",
+            "command": "latexmk",
+            "args": [
+                "-interaction=nonstopmode",
+                "-f",
+                "-gg",
+                "-pv",
+                "-xelatex",
+                "-synctex=1",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        // latexmk を利用した uplatex によるビルドコマンド
+        {
+            "name": "Latexmk (upLaTeX)",
+            "command": "latexmk",
+            "args": [
+                "-f",
+                "-gg",
+                "-pv",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        // latexmk を利用した platex によるビルドコマンド
+        // 古い LaTeX のテンプレートを使いまわしている (ドキュメントクラスが jreport や jsreport ) 場合のため
+        {
+            "name": "Latexmk (pLaTeX)",
+            "command": "latexmk",
+            "args": [
+                "-f",
+                "-gg",
+                "-pv",
+                "-latex='platex'",
+                "-latexoption='-kanji=utf8 -no-guess-input-env'",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        }
+    ],
+
+    // latex-workshop.latex.recipes: Recipe の定義
+    "latex-workshop.latex.recipes": [
+        // LuaLaTeX で書かれた文書のビルドレシピ
+        {
+            "name": "LuaLaTeX",
+            "tools": ["Latexmk (LuaLaTeX)"]
+        },
+        {
+            "name": "PDFLaTeX",
+            "tools": ["Latexmk (pdflatex)"]
+        },
+        {
+            "name": "Makefile",
+            "tools": ["LuaLaTex (Makefile)"]
+        },
+        // XeLaTeX で書かれた文書のビルドレシピ
+        {
+            "name": "XeLaTeX",
+            "tools": ["Latexmk (XeLaTeX)"]
+        },
+        // LaTeX(upLaTeX) で書かれた文書のビルドレシピ
+        {
+            "name": "upLaTeX",
+            "tools": ["Latexmk (upLaTeX)"]
+        },
+        // LaTeX(pLaTeX) で書かれた文書のビルドレシピ
+        {
+            "name": "pLaTeX",
+            "tools": ["Latexmk (pLaTeX)"]
+        }
+    ],
+
+    // latex-workshop.latex.magic.args: マジックコメント付きの LaTeX ドキュメントをビルドする設定
+    // '%!TEX' で始まる行はマジックコメントと呼ばれ、LaTeX のビルド時にビルドプログラムに解釈され、
+    // プログラムの挙動を制御する事ができる。
+    // 参考リンク: https://blog.miz-ar.info/2016/11/magic-comments-in-tex/
+    "latex-workshop.latex.magic.args": [
+        "-f",
+        "-gg",
+        "-pv",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+    ],
+
+    // latex-workshop.latex.clean.fileTypes: クリーンアップ時に削除されるファイルの拡張子
+    // LaTeX 文書はビルド時に一時ファイルとしていくつかのファイルを生成するが、最終的に必要となるのは
+    // PDF ファイルのみである場合などが多い。また、LaTeX のビルド時に失敗した場合、失敗時に生成された
+    // 一時ファイルの影響で、修正後のビルドに失敗してしまう事がよくある。そのため、一時的なファイルを
+    // 削除する機能 (クリーンアップ) が LaTeX Workshop には備わっている。
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.synctex.gz",
+        // for Beamer files
+        "_minted*",
+        "*.nav",
+        "*.snm",
+        "*.vrb"
+    ],
+
+    // latex-workshop.view.pdf.viewer: PDF ビューアの開き方
+    // VSCode 自体には PDF ファイルを閲覧する機能が備わっていないが、
+    // LaTeX Workshop にはその機能が備わっている。
+    // "tab" オプションを指定すると、今開いているエディタを左右に分割し、右側に生成されたPDFを表示するようにしてくれる
+    // この PDF ビュアーは LaTeX のビルドによって更新されると同期して内容を更新してくれる。
+    "latex-workshop.view.pdf.viewer": "tab",
+
+    // latex-workshop.latex.autoClean.run: ビルド失敗時に一時ファイルのクリーンアップを行うかどうか
+    // 上記説明にもあったように、ビルド失敗時に生成された一時ファイルが悪影響を及ぼす事があるため、自動で
+    // クリーンアップがかかるようにしておく。
+    "latex-workshop.latex.autoClean.run": "onFailed",
+
+    // latex-workshop.latex.autoBuild.run: .tex ファイルの保存時に自動的にビルドを行うかどうか
+    // LaTeX ファイルは .tex ファイルを変更後にビルドしないと、PDF ファイル上に変更結果が反映されないため、
+    // .tex ファイルの保存と同時に自動的にビルドを実行する設定があるが、文書が大きくなるに連れてビルドにも
+    // 時間がかかってしまい、ビルドプログラムの負荷がエディタに影響するため、無効化しておく。
+    // "latex-workshop.latex.autoBuild.run": "never",
+
+    // latexindentに対するパスを追加する
+    // https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos
+    "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+    "[latex]": {
+        "editor.fontSize": 12,
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "editor.rulers": [120],
+    // VScodeのVim拡張機能で通常モードに戻ったときに自動で半角英数にする
+    // https://qiita.com/tea-red/items/23dfc89edc11ecdced03
+    // 2023-01-18 あまりにも挙動が不安定なので、karabiner-Elements のC+[ で英数キーを送信する設定を行なった
+    // "vim.autoSwitchInputMethod.enable": true,
+    // "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
+    // "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+    // "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["enter"],
+            "after": ["i", "enter", "esc"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // https://www.it-swarm.jp.net/ja/visual-studio-code/vs-code%EF%BC%9Avs-code%E3%81%A7%E6%8A%98%E3%82%8A%E8%BF%94%E3%81%99%E3%81%A8%E3%81%8D%E3%81%AB%E3%80%81%E8%A1%A8%E7%A4%BA%E8%A1%8C%E3%81%94%E3%81%A8%E3%81%AB%E3%82%AB%E3%83%BC%E3%82%BD%E3%83%AB%E3%82%92%E7%A7%BB%E5%8B%95%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF%E3%81%A9%E3%81%86%E3%81%99%E3%82%8C%E3%81%B0%E3%82%88%E3%81%84%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F/944418622/
+        {
+            "before": ["x"],
+            "after": ["\"", "_", "x"]
+        },
+        {
+            "before": ["s"],
+            "after": ["\"", "_", "s"]
+        }
+        // {
+        //   "before": ["d"],
+        //   "after": ["\"", "_", "d"]
+        // }
+    ],
+    "extensions.ignoreRecommendations": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.fullScreen": false,
+    "editor.maxTokenizationLineLength": 40000,
+    "files.associations": {
+        "*.stub": "php",
+        "*.js": "javascript",
+        "*.liquid": "liquid",
+        "*.vim": "vimrc"
+    },
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "outline.showVariables": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.formatOnType": true,
+    "tabnine.experimentalAutoImports": true,
+    "deepl.apiKey": null,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.autofetch": true,
+    "editor.inlineSuggest.enabled": true,
+    "[blade]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "search.searchOnType": false,
+    "editor.guides.highlightActiveIndentation": false,
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "emmet.excludeLanguages": ["markdown", "php"],
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.minimap.enabled": false,
+    "cSpell.ignoreWords": [
+        "Cuit",
+        "Gnikyt",
+        "KAMPO",
+        "MMDD",
+        "SAISON",
+        "Sampo",
+        "Spatie",
+        "barryvdh",
+        "blinkmacsystemfont",
+        "chefrepi",
+        "datetime",
+        "grayout",
+        "howto",
+        "idempotency",
+        "kamei",
+        "lazysizes",
+        "myrepo",
+        "myshopify",
+        "phpstan",
+        "prefcode",
+        "saumon",
+        "skus",
+        "stylelint",
+        "unveilhooks",
+        "vinaigre",
+        "yamato"
+    ],
+    "workbench.editor.enablePreview": false,
+    "cSpell.userWords": [
+        "arrachera",
+        "Arrayable",
+        "atsushi",
+        "azuma",
+        "bresaise",
+        "carotte",
+        "chocolat",
+        "Cookpit",
+        "escabeche",
+        "exif",
+        "filesystems",
+        "fukuda",
+        "ginpei",
+        "inada",
+        "ishii",
+        "kazuhiro",
+        "kazunari",
+        "kouji",
+        "Laravel",
+        "lazyload",
+        "markdwon",
+        "Mizobuchi",
+        "mozjpeg",
+        "muffaldine",
+        "mypage",
+        "nakamura",
+        "nekonome",
+        "Ovgo",
+        "piperade",
+        "poelee",
+        "poivre",
+        "porc",
+        "Queueable",
+        "rapees",
+        "redirector",
+        "ropia",
+        "ruleset",
+        "salsiccia",
+        "sato",
+        "sekiguchi",
+        "shimizu",
+        "shunsuke",
+        "squoosh",
+        "taragi",
+        "Tokenable",
+        "tomoko",
+        "yamamoto",
+        "yukihide"
+    ],
+    "editor.formatOnPaste": true,
+    "editor.fontSize": 11,
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders",
+        "composer.json"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false
+}

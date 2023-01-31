@@ -1,0 +1,47 @@
+[core]
+	quotepath = false
+	autoCRLF = false
+	editor = nvim
+
+[color]
+	ui = auto
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
+
+[alias]
+	fixit=commit --amend --no-edit
+	bc = "!f() { branch | grep -v \"master\\|main\\|develop\" | xargs git branch -D }; f"
+
+[user]
+	name = okita_kamegoro
+	mail = keisi1100525@outlook.jp
+	email = keisi1100525@outlook.jp
+	signingkey = 62A8E7C1FD074516
+
+[push]
+	default = current
+
+[fetch]
+    ; prune = true[filter "lfs"]
+	prune = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[commit]
+	template = ~/.commit_template
+	gpgsign = true
+
+[init]
+	defaultBranch = main
+
+[gpg]
+	program = /opt/homebrew/bin/gpg
+
+[pull]
+	rebase = false
+

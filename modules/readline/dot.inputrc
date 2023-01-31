@@ -1,0 +1,23 @@
+# [vi mode]
+# enabled vi mode. vi モードで編集できるようにする
+set editing-mode vi
+
+# [prompt]
+# show mode either insert mode(ins) or command mode(cmd)
+set show-mode-in-prompt on
+# change ins mode status
+set vi-ins-mode-string \1\e[6 q\2
+# change cmd mode status
+set vi-cmd-mode-string \1\e[2 q\2
+
+# [color]
+# Color files by types. ファイルタイプごとにカラフルにする
+ set colored-stats On
+# Append char to indicate type. 実行ファイルの色付け
+set visible-stats On
+# Mark symlinked directories
+set mark-symlinked-directories On
+# Color the common prefix. 補完の接頭辞をカラフルにする
+set colored-completion-prefix On
+# Color the common prefix in menu-complete
+set menu-complete-display-prefix On

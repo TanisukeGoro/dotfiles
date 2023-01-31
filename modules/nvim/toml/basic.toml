@@ -18,9 +18,6 @@ repo = 'mattn/emmet-vim'
 repo = 'chrisbra/csv.vim'
 
 [[plugins]]
-repo = 'mattn/vim-sl'
-
-[[plugins]]
 repo = 'neoclide/coc.nvim'
 build = 'coc#util#install()'
 hook_add = '''
@@ -45,5 +42,5 @@ repo = 'sonph/onehalf'
 [[plugins]]
 repo = 'ulwlu/elly.vim'
 
-[[plugins]]
-repo = 'folke/zen-mode.nvim'
+# [[plugins]]
+# repo = 'folke/zen-mode.nvim'

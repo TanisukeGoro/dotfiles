@@ -32,4 +32,5 @@ make tmux-clean
 
 # install
 make tmux-install
+# Press `prefix` + `I` to install the plugins in the tmux-session.
 ```

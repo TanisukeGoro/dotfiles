@@ -82,10 +82,11 @@ set smartcase
 
 syntax on
 
-" keymap
+"  keymap
 let mapleader = ','
-nnoremap <silent>bp :bprevious<CR>
-nnoremap <silent>bn :bnext<CR>
+"  注意点, bn など b <back> などの1アクションのキーに割り当てると判定のための遅延が発生するため、回避する
+"  nnoremap <silent>bp :bprevious<CR>
+"  nnoremap <silent>bn :bnext<CR>
 nnoremap <C-w> :tabclose
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nmap / /\v

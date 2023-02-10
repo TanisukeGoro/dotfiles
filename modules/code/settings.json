@@ -439,6 +439,7 @@
     ],
     "workbench.editor.enablePreview": false,
     "cSpell.userWords": [
+        "ankake",
         "arrachera",
         "Arrayable",
         "atsushi",
@@ -448,6 +449,7 @@
         "chocolat",
         "Cookpit",
         "Dispatchable",
+        "doesnt",
         "escabeche",
         "exif",
         "filesystems",
@@ -461,6 +463,7 @@
         "Laravel",
         "lazyload",
         "mailhog",
+        "mapo",
         "markdwon",
         "minio",
         "Mizobuchi",
@@ -502,10 +505,10 @@
         ".vscode-insiders",
         "composer.json"
     ],
-    "diffEditor.ignoreTrimWhitespace": false,
     "chatgpt.gpt3.apiKey": "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",
     "php.format.rules.alignConsecutiveAssignments": false,
     "phpunit.phpunit": "./vendor/bin/phpunit",
     "php.format.codeStyle": "Off",
-    "workbench.colorTheme": "Default High Contrast"
+    "workbench.colorTheme": "Default High Contrast",
+    "diffEditor.ignoreTrimWhitespace": false
 }

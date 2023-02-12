@@ -87,7 +87,7 @@ let mapleader = ','
 "  注意点, bn など b <back> などの1アクションのキーに割り当てると判定のための遅延が発生するため、回避する
 "  nnoremap <silent>bp :bprevious<CR>
 "  nnoremap <silent>bn :bnext<CR>
-nnoremap <C-w> :tabclose
+"  nnoremap <C-w> :tabclose
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nmap / /\v
 nmap <Leader><Leader> V

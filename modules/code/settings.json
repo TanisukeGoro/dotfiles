@@ -407,7 +407,6 @@
     "php.suggest.basic": false,
     "php.validate.enable": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.minimap.enabled": false,
     "cSpell.ignoreWords": [
         "Cuit",
         "Gnikyt",
@@ -425,6 +424,7 @@
         "howto",
         "idempotency",
         "kamei",
+        "kokyu",
         "lazysizes",
         "myrepo",
         "myshopify",
@@ -510,5 +510,6 @@
     "phpunit.phpunit": "./vendor/bin/phpunit",
     "php.format.codeStyle": "Off",
     "workbench.colorTheme": "Default High Contrast",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false
 }

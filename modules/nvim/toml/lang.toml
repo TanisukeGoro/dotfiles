@@ -74,4 +74,5 @@ au BufRead,BufNewFile dot.tmux.conf setf tmuxconf
 '''
 
 [[plugins]]
-repo = 'jwalton512/vim-blade'
+repo = 'yaegassy/coc-intelephense'
+on_ft = ['php']

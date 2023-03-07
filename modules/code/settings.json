@@ -7,7 +7,6 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "workbench.colorTheme": "Default High Contrast",
     "markdown-preview-github-styles.colorTheme": "light",
     "explorer.confirmDelete": false,
     "editor.autoClosingBrackets": "beforeWhitespace",
@@ -336,18 +335,19 @@
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
     "editor.rulers": [120],
-    // VScodeのVim拡張機能で通常モードに戻ったときに自動で半角英数にする
-    // https://qiita.com/tea-red/items/23dfc89edc11ecdced03
-    // 2023-01-18 あまりにも挙動が不安定なので、karabiner-Elements のC+[ で英数キーを送信する設定を行なった
-    // "vim.autoSwitchInputMethod.enable": true,
-    // "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
-    // "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
-    // "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+
+    // ****************************
+    // for vim settings
+    // ****************************
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
         {
             "before": ["enter"],
             "after": ["i", "enter", "esc"]
+        },
+        {
+            "before": ["<space>"],
+            "after": ["<leader>", "<leader>"]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -360,11 +360,21 @@
             "before": ["s"],
             "after": ["\"", "_", "s"]
         }
-        // {
-        //   "before": ["d"],
-        //   "after": ["\"", "_", "d"]
-        // }
     ],
+    /*
+     * for vim-easyMotion
+     */
+    "vim.easymotion": true,
+    // VScodeのVim拡張機能で通常モードに戻ったときに自動で半角英数にする
+    // https://qiita.com/tea-red/items/23dfc89edc11ecdced03
+    // 2023-01-18 あまりにも挙動が不安定なので、karabiner-Elements のC+[ で英数キーを送信する設定を行なった
+    // "vim.autoSwitchInputMethod.enable": true,
+    // "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.RomajiTyping.Roman",
+    // "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+    // "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+    /*
+     *
+     */
     "extensions.ignoreRecommendations": true,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
@@ -374,7 +384,7 @@
         "*.stub": "php",
         "*.js": "javascript",
         "*.liquid": "liquid",
-        "*.vim": "vimrc"
+        "*.vim": "viml"
     },
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "outline.showVariables": false,
@@ -397,7 +407,6 @@
     "php.suggest.basic": false,
     "php.validate.enable": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.minimap.enabled": false,
     "cSpell.ignoreWords": [
         "Cuit",
         "Gnikyt",
@@ -410,10 +419,12 @@
         "blinkmacsystemfont",
         "chefrepi",
         "datetime",
+        "fakjoepaj",
         "grayout",
         "howto",
         "idempotency",
         "kamei",
+        "kokyu",
         "lazysizes",
         "myrepo",
         "myshopify",
@@ -428,6 +439,7 @@
     ],
     "workbench.editor.enablePreview": false,
     "cSpell.userWords": [
+        "ankake",
         "arrachera",
         "Arrayable",
         "atsushi",
@@ -436,6 +448,8 @@
         "carotte",
         "chocolat",
         "Cookpit",
+        "Dispatchable",
+        "doesnt",
         "escabeche",
         "exif",
         "filesystems",
@@ -448,7 +462,10 @@
         "kouji",
         "Laravel",
         "lazyload",
+        "mailhog",
+        "mapo",
         "markdwon",
+        "minio",
         "Mizobuchi",
         "mozjpeg",
         "muffaldine",
@@ -488,5 +505,11 @@
         ".vscode-insiders",
         "composer.json"
     ],
-    "diffEditor.ignoreTrimWhitespace": false
+    "chatgpt.gpt3.apiKey": "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",
+    "php.format.rules.alignConsecutiveAssignments": false,
+    "phpunit.phpunit": "./vendor/bin/phpunit",
+    "php.format.codeStyle": "Off",
+    "workbench.colorTheme": "Default High Contrast",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false
 }

@@ -41,6 +41,3 @@ repo = 'sonph/onehalf'
 
 [[plugins]]
 repo = 'ulwlu/elly.vim'
-
-# [[plugins]]
-# repo = 'folke/zen-mode.nvim'

@@ -49,13 +49,13 @@ endif
 " default settings
 " [ set ]
 set number
+set title
 set backspace=indent,eol,start
 set laststatus=2
 set statusline=%y
 set relativenumber
 set clipboard+=unnamed
 set ruler
-" settings
 set encoding=utf-8
 set fileencoding=utf-8
 set backspace=2
@@ -65,9 +65,6 @@ set showmatch
 set wrapscan
 set hlsearch
 set showcmd
-set title
-set cursorline
-set cursorcolumn
 set nofoldenable
 set noswapfile
 set expandtab
@@ -76,6 +73,11 @@ set splitright
 set incsearch
 set ignorecase
 set smartcase
+
+" [ style ]
+set cursorline
+set cursorcolumn
+highlight CoursorColumn ctermfg=darkgray
 
 " autocmd
 " autocmd VimEnter * :ZenMode

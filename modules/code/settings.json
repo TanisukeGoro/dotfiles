@@ -23,7 +23,6 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": [
         "source.organizeImports",
@@ -335,6 +334,7 @@
     // for vim settings
     // ****************************
     "vim.useSystemClipboard": true,
+    "vim.surround": true,
     "vim.normalModeKeyBindings": [
         {
             "before": ["enter"],
@@ -379,7 +379,8 @@
         "*.stub": "php",
         "*.js": "javascript",
         "*.liquid": "liquid",
-        "*.vim": "viml"
+        "*.vim": "viml",
+        "*.log": "log"
     },
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "outline.showVariables": false,
@@ -435,10 +436,12 @@
         "murakami",
         "myrepo",
         "myshopify",
+        "nekopos",
         "phpstan",
         "plyr",
         "prefcode",
         "saumon",
+        "showable",
         "skus",
         "splidejs",
         "stylelint",
@@ -446,6 +449,7 @@
         "typeahead",
         "unveilhooks",
         "vinaigre",
+        "vuedraggable",
         "yamato"
     ],
     "workbench.editor.enablePreview": false,
@@ -522,7 +526,6 @@
         "composer.json"
     ],
     "workbench.colorTheme": "Default High Contrast",
-    "editor.minimap.enabled": false,
     "eslint.codeAction.showDocumentation": {
         "enable": false
     },
@@ -543,6 +546,11 @@
     "intelephense.diagnostics.typeErrors": false,
     "intelephense.diagnostics.undefinedMethods": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "html.format.wrapLineLength": 240,
-    "editor.unicodeHighlight.ambiguousCharacters": false
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.minimap.enabled": false,
+    "html.autoClosingTags": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "html.preview.scrollEditorWithPreview": false,
+    "html.preview.scrollPreviewWithEditor": false,
+    "editor.accessibilitySupport": "off"
 }

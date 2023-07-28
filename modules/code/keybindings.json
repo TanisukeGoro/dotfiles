@@ -172,5 +172,20 @@
         "key": "f2",
         "command": "-editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "right",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+    },
+    {
+        "key": "shift+g shift+d",
+        "command": "editor.action.openLink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "-editor.action.openLink",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
     }
 ]

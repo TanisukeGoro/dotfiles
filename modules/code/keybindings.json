@@ -179,7 +179,7 @@
         "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
     },
     {
-        "key": "shift+g shift+d",
+        "key": "ctrl+g ctrl+d",
         "command": "editor.action.openLink",
         "when": "editorTextFocus"
     },
@@ -187,5 +187,14 @@
         "key": "cmd+enter",
         "command": "-editor.action.openLink",
         "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.switchWindow",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
     }
 ]

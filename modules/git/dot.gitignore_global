@@ -1,0 +1,3 @@
+# こんな話もあるようだが、make dot-install で手軽に入れたいため、あえて .gitignore_global で管理したいと思う
+# https://zenn.dev/qnighy/articles/1a756f2857dc20
+.DS_Store

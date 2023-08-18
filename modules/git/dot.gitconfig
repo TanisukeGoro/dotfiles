@@ -2,6 +2,7 @@
 	quotepath = false
 	autoCRLF = false
 	editor = nvim
+	excludesFile = /Users/abekeishi/.gitignore_global
 
 [color]
 	ui = auto

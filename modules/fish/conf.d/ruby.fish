@@ -9,4 +9,6 @@ if type -q rbenv
     fish_add_path $HOME/.rbenv/bin
     source (rbenv init - | psub)
     set -x theme_display_ruby no
+
+    status --is-interactive; and rbenv init - fish | source
 end

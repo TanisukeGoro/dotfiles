@@ -2,6 +2,7 @@
 	quotepath = false
 	autoCRLF = false
 	editor = nvim
+	excludesFile = /Users/abekeishi/.gitignore_global
 
 [color]
 	ui = auto
@@ -45,3 +46,8 @@
 [pull]
 	rebase = false
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

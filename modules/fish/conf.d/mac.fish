@@ -39,6 +39,9 @@ if test (uname) = "Darwin"
     # for ConvertCharCode.sh
     alias charconv="sh /Users/abekeishi/ghq/github.com/TanisukeGoro/ExchangeCharCode/ConvertCharCode.sh"
 
+    # for mysql
+    fish_add_path /opt/homebrew/opt/mysql@5.7/bin
+
     # for directory path copy
     alias dir="pwd | pbcopy | pwd"
 

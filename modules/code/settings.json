@@ -23,7 +23,6 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": [
         "source.organizeImports",
         "source.fixAll.eslint"
@@ -385,7 +384,7 @@
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "outline.showVariables": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "tabnine.experimentalAutoImports": true,
     "deepl.apiKey": null,
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -489,6 +488,7 @@
         "mypage",
         "nakamura",
         "nekonome",
+        "nuxt",
         "Ovgo",
         "piperade",
         "poelee",
@@ -514,7 +514,7 @@
         "yamamoto",
         "yukihide"
     ],
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.fontSize": 11,
     "cSpell.ignorePaths": [
         "package-lock.json",
@@ -549,8 +549,13 @@
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.minimap.enabled": false,
     "html.autoClosingTags": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "html.preview.scrollEditorWithPreview": false,
     "html.preview.scrollPreviewWithEditor": false,
-    "editor.accessibilitySupport": "off"
+    "editor.accessibilitySupport": "off",
+    "prettier.requireConfig": true,
+    "prettier.printWidth": 120,
+    "eslint.codeActionsOnSave.rules": null,
+    "prettier.semi": false,
+    "dart.devToolsBrowser": "default",
+    "editor.formatOnSave": false
 }

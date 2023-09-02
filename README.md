@@ -34,3 +34,15 @@ make tmux-clean
 make tmux-install
 # Press `prefix` + `I` to install the plugins in the tmux-session.
 ```
+
+## homebrew backup
+
+バックアップは Brewfile に書き込む
+
+```bash
+# install
+brew bundle
+
+# backup
+brew bundle dump
+```

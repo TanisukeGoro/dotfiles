@@ -384,7 +384,7 @@
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "outline.showVariables": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.formatOnType": false,
+    "editor.formatOnType": true,
     "tabnine.experimentalAutoImports": true,
     "deepl.apiKey": null,
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -514,7 +514,7 @@
         "yamamoto",
         "yukihide"
     ],
-    "editor.formatOnPaste": false,
+    "editor.formatOnPaste": true,
     "editor.fontSize": 11,
     "cSpell.ignorePaths": [
         "package-lock.json",
@@ -557,5 +557,7 @@
     "eslint.codeActionsOnSave.rules": null,
     "prettier.semi": false,
     "dart.devToolsBrowser": "default",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useBundler": true
 }

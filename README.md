@@ -46,3 +46,13 @@ brew bundle
 # backup
 brew bundle dump
 ```
+
+## key bindings
+
+### tmux
+
+prefix: `Ctrl + q`
+
+### fish
+
+normal mode(fish_vi_key_bindings): `Ctrl + [`

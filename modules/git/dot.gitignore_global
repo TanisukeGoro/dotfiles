@@ -1,3 +1,15 @@
 # こんな話もあるようだが、make dot-install で手軽に入れたいため、あえて .gitignore_global で管理したいと思う
 # https://zenn.dev/qnighy/articles/1a756f2857dc20
 .DS_Store
+
+#
+# 外部のプロジェクトで利便性を向上させるために、特定の命名規則に基づいたファイルを作成可能にする
+#
+# docker のコンテナを自分用に作成する場合
+docker-compose.private.yml
+
+# rails のコマンドを自分用に作成する場合
+sandbox.private.rake
+
+# diff patch を自分用に作成する場合
+diff.patch.private

@@ -1,5 +1,4 @@
 {
-    "workbench.editor.showTabs": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.labelFormat": "medium",
@@ -23,10 +22,10 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "editor.codeActionsOnSave": [
-        "source.organizeImports",
-        "source.fixAll.eslint"
-    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "never",
+        "source.fixAll.eslint": "explicit"
+    },
     "editor.quickSuggestions": {
         "other": false,
         "comments": true,
@@ -122,23 +121,18 @@
     },
     "C_Cpp.updateChannel": "Insiders",
     "editor.lineNumbers": "relative",
-
     /* latex用の設定
      * https://qiita.com/popunbom/items/7d02fc75ad23b735d28c
      * https://qiita.com/skyloken/items/bb602494317ba0daa11f
      */
-
     // editor.wordSeparators: 単語単位での移動を行う場合の区切り文字を指定
     // 日本語文書で単語移動を使うため、助詞や読点、括弧を区切り文字として指定する
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~? 、。「」【】『』（）！？てにをはがのともへでや",
-
     // 設定: LaTeX Workshop
-
     // LaTeX Workshop ではビルド設定を「Tool」と「Recipe」という2つで考える
     //   Tool: 実行される1つのコマンド。コマンド (command) と引数 (args) で構成される
     //   Recipe: Tool の組み合わわせを定義する。Tool の組み合わせ (tools) で構成される。
     //           tools の中で利用される Tool は "latex-workshop.latex.tools" で定義されている必要がある。
-
     // latex-workshop.latex.tools: Tool の定義
     "latex-workshop.latex.tools": [
         // latexmk を利用した lualatex によるビルドコマンド
@@ -222,7 +216,6 @@
             ]
         }
     ],
-
     // latex-workshop.latex.recipes: Recipe の定義
     "latex-workshop.latex.recipes": [
         // LuaLaTeX で書かれた文書のビルドレシピ
@@ -254,7 +247,6 @@
             "tools": ["Latexmk (pLaTeX)"]
         }
     ],
-
     // latex-workshop.latex.magic.args: マジックコメント付きの LaTeX ドキュメントをビルドする設定
     // '%!TEX' で始まる行はマジックコメントと呼ばれ、LaTeX のビルド時にビルドプログラムに解釈され、
     // プログラムの挙動を制御する事ができる。
@@ -268,7 +260,6 @@
         "-file-line-error",
         "%DOC%"
     ],
-
     // latex-workshop.latex.clean.fileTypes: クリーンアップ時に削除されるファイルの拡張子
     // LaTeX 文書はビルド時に一時ファイルとしていくつかのファイルを生成するが、最終的に必要となるのは
     // PDF ファイルのみである場合などが多い。また、LaTeX のビルド時に失敗した場合、失敗時に生成された
@@ -301,25 +292,21 @@
         "*.snm",
         "*.vrb"
     ],
-
     // latex-workshop.view.pdf.viewer: PDF ビューアの開き方
     // VSCode 自体には PDF ファイルを閲覧する機能が備わっていないが、
     // LaTeX Workshop にはその機能が備わっている。
     // "tab" オプションを指定すると、今開いているエディタを左右に分割し、右側に生成されたPDFを表示するようにしてくれる
     // この PDF ビュアーは LaTeX のビルドによって更新されると同期して内容を更新してくれる。
     "latex-workshop.view.pdf.viewer": "tab",
-
     // latex-workshop.latex.autoClean.run: ビルド失敗時に一時ファイルのクリーンアップを行うかどうか
     // 上記説明にもあったように、ビルド失敗時に生成された一時ファイルが悪影響を及ぼす事があるため、自動で
     // クリーンアップがかかるようにしておく。
     "latex-workshop.latex.autoClean.run": "onFailed",
-
     // latex-workshop.latex.autoBuild.run: .tex ファイルの保存時に自動的にビルドを行うかどうか
     // LaTeX ファイルは .tex ファイルを変更後にビルドしないと、PDF ファイル上に変更結果が反映されないため、
     // .tex ファイルの保存と同時に自動的にビルドを実行する設定があるが、文書が大きくなるに連れてビルドにも
     // 時間がかかってしまい、ビルドプログラムの負荷がエディタに影響するため、無効化しておく。
     // "latex-workshop.latex.autoBuild.run": "never",
-
     // latexindentに対するパスを追加する
     // https://tex.stackexchange.com/questions/390433/how-can-i-install-latexindent-on-macos
     "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
@@ -328,7 +315,6 @@
         "editor.defaultFormatter": "James-Yu.latex-workshop"
     },
     "editor.rulers": [120],
-
     // ****************************
     // for vim settings
     // ****************************
@@ -370,9 +356,11 @@
      *
      */
     "extensions.ignoreRecommendations": true,
-    "zenMode.hideLineNumbers": false,
-    "zenMode.hideStatusBar": false,
     "zenMode.fullScreen": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.showTabs": "single",
+    "zenMode.hideLineNumbers": false,
+    "zenMode.silentNotifications": false,
     "editor.maxTokenizationLineLength": 40000,
     "files.associations": {
         "*.stub": "php",
@@ -384,7 +372,7 @@
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "outline.showVariables": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "tabnine.experimentalAutoImports": true,
     "deepl.apiKey": null,
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -403,6 +391,9 @@
     "php.validate.enable": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "cSpell.ignoreWords": [
+        "AUTOCAMPAIGN",
+        "Breased",
+        "CONDITIONTYPE",
         "Cmixin",
         "Cuit",
         "Gnikyt",
@@ -411,6 +402,7 @@
         "MMDD",
         "Moshimo",
         "SAISON",
+        "SELECETED",
         "Sampo",
         "Shinji",
         "Spatie",
@@ -418,6 +410,8 @@
         "addedfile",
         "barryvdh",
         "blinkmacsystemfont",
+        "brulee",
+        "caponata",
         "chefrepi",
         "chikuzen",
         "datetime",
@@ -436,8 +430,11 @@
         "myrepo",
         "myshopify",
         "nekopos",
+        "noshi",
+        "paginavi",
         "phpstan",
         "plyr",
+        "porchetta",
         "prefcode",
         "saumon",
         "showable",
@@ -449,11 +446,13 @@
         "unveilhooks",
         "vinaigre",
         "vuedraggable",
+        "welbox",
         "yamato"
     ],
     "workbench.editor.enablePreview": false,
     "cSpell.userWords": [
         "ankake",
+        "antd",
         "arrachera",
         "Arrayable",
         "atsushi",
@@ -464,6 +463,7 @@
         "chocolat",
         "Cookpit",
         "Dispatchable",
+        "Docu",
         "doesnt",
         "escabeche",
         "exif",
@@ -474,6 +474,7 @@
         "ishii",
         "kazuhiro",
         "kazunari",
+        "koinobori",
         "kouji",
         "Laravel",
         "lazyload",
@@ -511,10 +512,11 @@
         "Tokenable",
         "tomoko",
         "VITE",
+        "vuex",
         "yamamoto",
         "yukihide"
     ],
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.fontSize": 11,
     "cSpell.ignorePaths": [
         "package-lock.json",
@@ -545,19 +547,108 @@
     "genieai.openai.organization": "org-tLP7yyl4ZiIiac2JO5zZVu7N",
     "intelephense.diagnostics.typeErrors": false,
     "intelephense.diagnostics.undefinedMethods": false,
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.minimap.enabled": false,
     "html.autoClosingTags": false,
     "html.preview.scrollEditorWithPreview": false,
     "html.preview.scrollPreviewWithEditor": false,
     "editor.accessibilitySupport": "off",
-    "prettier.requireConfig": true,
     "prettier.printWidth": 120,
     "eslint.codeActionsOnSave.rules": null,
     "prettier.semi": false,
     "dart.devToolsBrowser": "default",
-    "editor.formatOnSave": true,
     "ruby.intellisense": "rubyLocate",
-    "ruby.useBundler": true
+    "ruby.useBundler": true,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "intelephense.format.enable": false,
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "ruby.rubocop.useBundler": true,
+    "editor.formatOnSave": false,
+    "blade.format.enable": true,
+    "prettier.requireConfig": true,
+    "diffEditor.codeLens": true,
+    "window.autoDetectHighContrast": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "html.format.enable": false,
+    "editor.minimap.enabled": false,
+    "intelephense.stubs": [
+        "apache",
+        "bcmath",
+        "bz2",
+        "calendar",
+        "com_dotnet",
+        "Core",
+        "ctype",
+        "curl",
+        "date",
+        "dba",
+        "dom",
+        "enchant",
+        "exif",
+        "FFI",
+        "fileinfo",
+        "filter",
+        "fpm",
+        "ftp",
+        "gd",
+        "gettext",
+        "gmp",
+        "hash",
+        "iconv",
+        "imap",
+        "intl",
+        "json",
+        "ldap",
+        "libxml",
+        "mbstring",
+        "meta",
+        "mysqli",
+        "oci8",
+        "odbc",
+        "openssl",
+        "pcntl",
+        "pcre",
+        "PDO",
+        "pdo_ibm",
+        "pdo_mysql",
+        "pdo_pgsql",
+        "pdo_sqlite",
+        "pgsql",
+        "Phar",
+        "posix",
+        "pspell",
+        "random",
+        "readline",
+        "Reflection",
+        "session",
+        "shmop",
+        "SimpleXML",
+        "snmp",
+        "soap",
+        "sockets",
+        "sodium",
+        "SPL",
+        "sqlite3",
+        "standard",
+        "superglobals",
+        "sysvmsg",
+        "sysvsem",
+        "sysvshm",
+        "tidy",
+        "tokenizer",
+        "xml",
+        "xmlreader",
+        "xmlrpc",
+        "xmlwriter",
+        "xsl",
+        "Zend OPcache",
+        "zip",
+        "zlib",
+        "wordpress"
+    ],
+    "security.promptForLocalFileProtocolHandling": false,
 }

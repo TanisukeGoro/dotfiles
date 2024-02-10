@@ -4,6 +4,7 @@ FISH_CONFIG_DIR = $(FISH_DIR)/conf.d
 FISH_FUNCTION_DIR = $(FISH_DIR)/functions
 
 SELF_FISH_DIR = $(MODULE_DIR)/fish
+SELF_PRIVATE_FISH_DIR = $(TOP_DIR)-private/modules/fish
 
 FISH_FISHER_FILE = $(FISH_FUNCTION_DIR)/fisher.fish
 
@@ -28,6 +29,7 @@ $(FISH_DIR):
 	ln -sf $(SELF_FISH_DIR)/config.fish $(FISH_DIR)/config.fish
 	ln -sf $(SELF_FISH_DIR)/fish_plugins $(FISH_DIR)/fish_plugins
 	ln -sf $(SELF_FISH_DIR)/chefrepi.fish $(FISH_DIR)/chefrepi.fish
+	ln -sf $(SELF_PRIVATE_FISH_DIR)/project.fish $(FISH_DIR)/project.fish
 
 $(FISH_FUNCTION_DIR):
 	mkdir -p $(FISH_FUNCTION_DIR)

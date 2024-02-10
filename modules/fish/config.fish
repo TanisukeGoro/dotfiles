@@ -3,3 +3,4 @@ if type -q tmux && test -z $TMUX && status --is-login
 end
 
 source ~/.config/fish/chefrepi.fish
+source ~/.config/fish/project.fish

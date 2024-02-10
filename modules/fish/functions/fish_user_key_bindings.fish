@@ -4,6 +4,7 @@ function fish_user_key_bindings
     bind \cq peco_z
     # bind \cs peco_select_ghq
     bind \cp peco_tmux
+    bind \cn tmux_attach_session_if_needed
 
     # for vi-mode
     fish_vi_key_bindings insert

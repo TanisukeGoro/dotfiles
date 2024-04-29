@@ -3,7 +3,7 @@ function fish_user_key_bindings
     bind \co peco_ghq
     bind \cq peco_z
     # bind \cs peco_select_ghq
-    bind \cp peco_tmux
+    bind \cp mdm
     bind \cn tmux_attach_session_if_needed
 
     # for vi-mode

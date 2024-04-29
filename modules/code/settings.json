@@ -19,8 +19,26 @@
     "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "[blade]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "misogi.ruby-rubocop"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.codeActionsOnSave": {
         "source.organizeImports": "never",
@@ -368,7 +386,9 @@
         "*.liquid": "liquid",
         "*.vim": "viml",
         "*.log": "log",
-        "*.side": "json"
+        "*.side": "json",
+        "*.jb": "ruby",
+        "*.neon": "yaml"
     },
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "outline.showVariables": false,
@@ -379,14 +399,8 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "git.autofetch": true,
     "editor.inlineSuggest.enabled": true,
-    "[blade]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "search.searchOnType": false,
     "editor.guides.highlightActiveIndentation": false,
-    "[sql]": {
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-    },
     "emmet.excludeLanguages": ["markdown", "php"],
     "php.suggest.basic": false,
     "php.validate.enable": false,
@@ -463,14 +477,17 @@
         "carotte",
         "chocolat",
         "Cookpit",
+        "customfunction",
         "Dispatchable",
         "Docu",
         "doesnt",
         "escabeche",
         "exif",
+        "fadein",
         "filesystems",
         "fukuda",
         "ginpei",
+        "gsap",
         "ICHIBA",
         "inada",
         "ishii",
@@ -511,9 +528,11 @@
         "sato",
         "sekiguchi",
         "shimizu",
+        "shoku",
         "shunsuke",
         "splide",
         "squoosh",
+        "swiper",
         "taragi",
         "Tokenable",
         "tomoko",
@@ -521,6 +540,7 @@
         "UlidSlugable",
         "VITE",
         "vuex",
+        "webp",
         "yamamoto",
         "yukihide"
     ],
@@ -564,20 +584,12 @@
     "eslint.codeActionsOnSave.rules": null,
     "prettier.semi": false,
     "dart.devToolsBrowser": "default",
-    "ruby.intellisense": "rubyLocate",
     "ruby.useBundler": true,
     "extensions.autoUpdate": "onlyEnabledExtensions",
     "intelephense.format.enable": false,
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "ruby.rubocop.useBundler": true,
     "editor.formatOnSave": true,
     "blade.format.enable": true,
-    "prettier.requireConfig": true,
     "diffEditor.codeLens": true,
     "window.autoDetectHighContrast": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -658,5 +670,15 @@
         "zlib",
         "wordpress"
     ],
-    "security.promptForLocalFileProtocolHandling": false
+    "security.promptForLocalFileProtocolHandling": false,
+    "prettier.requireConfig": true,
+    "git.openRepositoryInParentFolders": "never",
+    "markdown.preview.breaks": true,
+    "solargraph.diagnostics": true,
+    "solargraph.autoformat": true,
+    "solargraph.useBundler": false,
+    "explorer.confirmPasteNative": false,
+    "[plantuml]": {
+        "editor.defaultFormatter": "jebbs.plantuml"
+    }
 }

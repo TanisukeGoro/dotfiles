@@ -13,3 +13,5 @@ sandbox.private.rake
 
 # diff patch を自分用に作成する場合
 diff.patch.private
+
+.idea

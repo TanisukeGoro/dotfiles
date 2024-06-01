@@ -1,7 +1,7 @@
-"
+" ========================
 "  ~/.config/nvim/init.vim
-"
-"
+" ========================
+
 if &compatible
     set nocompatible               " Be iMproved
 endif
@@ -46,8 +46,15 @@ if dein#check_install()
     call dein#install()
 endif
 
+" ========================
 " default settings
+" ========================
+
+" [ basic ]
+let mapleader = " "
+
 " [ set ]
+syntax on
 set number
 set title
 set backspace=indent,eol,start
@@ -82,17 +89,17 @@ highlight CoursorColumn ctermfg=darkgray
 " autocmd
 " autocmd VimEnter * :ZenMode
 
-syntax on
+" ========================
+" plugins
+" ========================
 
 "  keymap
-let mapleader = ','
 "  注意点, bn など b <back> などの1アクションのキーに割り当てると判定のための遅延が発生するため、回避する
-"  nnoremap <silent>bp :bprevious<CR>
-"  nnoremap <silent>bn :bnext<CR>
-"  nnoremap <C-w> :tabclose
+nnoremap <silent>bp :bprevious<CR>
+nnoremap <silent>bn :bnext<CR>
+nnoremap <C-w> :tabclose
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nmap / /\v
-nmap <Leader><Leader> V
 
 nnoremap <silent><C-b> :NERDTreeToggle<CR>
 
@@ -132,3 +139,9 @@ let g:ctrlp_abbrev = {
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
+
+" easymotion
+nmap <leader>s <Plug>(easymotion-s2)
+nmap <leader>w <Plug>(easymotion-w)
+nmap <leader>e <Plug>(easymotion-e)
+nmap ge <Plug>(easymotion-ge)

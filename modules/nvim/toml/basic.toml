@@ -41,3 +41,9 @@ repo = 'sonph/onehalf'
 
 [[plugins]]
 repo = 'ulwlu/elly.vim'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+source ~/.config/nvim/plugins/easymotion.vim
+'''

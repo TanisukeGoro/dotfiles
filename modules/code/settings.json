@@ -19,9 +19,9 @@
     "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
-    "[blade]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    // "[blade]": {
+    //     "editor.defaultFormatter": "onecentlin.laravel-blade"
+    // },
     "[sql]": {
         "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
     },
@@ -487,6 +487,7 @@
         "escabeche",
         "exif",
         "fadein",
+        "fapri",
         "filesystems",
         "fukuda",
         "ginpei",
@@ -689,5 +690,10 @@
     "[plantuml]": {
         "editor.defaultFormatter": "jebbs.plantuml"
     },
-    "vue.server.hybridMode": false
+    "vue.server.hybridMode": false,
+    "prisma.showPrismaDataPlatformNotification": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    }
 }

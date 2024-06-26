@@ -1,2 +1,13 @@
+format = """
+$time\
+$all
+"""
 [battery]
 disabled = true
+
+[time]
+disabled = false
+format = '[\[$time\]]($style) '
+time_format = '%T'
+utc_time_offset = '+9'
+time_range = '10:00:00-14:00:00'

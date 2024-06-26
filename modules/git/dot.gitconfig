@@ -17,7 +17,7 @@
 	bc = "!f() { branch | grep -v \"master\\|main\\|develop\" | xargs git branch -D }; f"
 
 [user]
-	name = okita_kamegoro
+	name = okita kamegoro
 	mail = keisi1100525@outlook.jp
 	email = keisi1100525@outlook.jp
 	signingkey = 62A8E7C1FD074516

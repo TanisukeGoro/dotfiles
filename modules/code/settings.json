@@ -1,4 +1,5 @@
 {
+    // "workbench.colorTheme": "Default High Contrast",
     "workbench.colorCustomizations": {
         // "textCodeBlock.background": "#ff0000"
     },
@@ -404,7 +405,6 @@
     "editor.inlineSuggest.enabled": true,
     "search.searchOnType": false,
     "editor.guides.highlightActiveIndentation": false,
-    "emmet.excludeLanguages": ["markdown", "php"],
     "php.suggest.basic": false,
     "php.validate.enable": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -487,14 +487,18 @@
         "axios",
         "azuma",
         "bensampo",
+        "blogdescription",
+        "blogname",
         "bresaise",
         "carotte",
         "chocolat",
         "Cookpit",
         "customfunction",
+        "customizer",
         "Dispatchable",
         "Docu",
         "doesnt",
+        "emailc",
         "Ergebnis",
         "escabeche",
         "exif",
@@ -502,6 +506,7 @@
         "fapri",
         "filesystems",
         "firstname",
+        "fluentmail",
         "fukuda",
         "ginpei",
         "gsap",
@@ -509,6 +514,7 @@
         "inada",
         "ishii",
         "Isset",
+        "kahotan",
         "kazuhiro",
         "kazunari",
         "koinobori",
@@ -530,19 +536,27 @@
         "nakamura",
         "nekonome",
         "NONMODULE",
+        "notif",
         "nuxt",
+        "opencage",
+        "optout",
         "Ovgo",
+        "passcode",
         "phar",
+        "phpmailer",
         "phpstan",
         "piperade",
         "poelee",
         "poivre",
         "popperjs",
         "porc",
+        "postname",
         "Queueable",
         "RAKUTEN",
         "rapees",
         "redirector",
+        "registr",
+        "robeen",
         "ropia",
         "ruleset",
         "salsiccia",
@@ -551,7 +565,9 @@
         "sekiguchi",
         "shimizu",
         "shoku",
+        "shortcode",
         "shunsuke",
+        "sitedes",
         "splide",
         "squoosh",
         "strval",
@@ -559,11 +575,16 @@
         "taragi",
         "Tokenable",
         "tomoko",
+        "toppageslider",
         "Ulids",
         "UlidSlugable",
+        "ulike",
+        "usermeta",
         "VITE",
         "vuex",
         "webp",
+        "wppb",
+        "wpulike",
         "yamamoto",
         "yukihide"
     ],
@@ -578,7 +599,6 @@
         ".vscode-insiders",
         "composer.json"
     ],
-    "workbench.colorTheme": "Default High Contrast",
     "eslint.codeAction.showDocumentation": {
         "enable": false
     },
@@ -709,5 +729,21 @@
     "github.copilot.editor.enableAutoCompletions": true,
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    }
+    },
+    "diffEditor.maxComputationTime": 0,
+    "scm.experimental.showHistoryGraph": true,
+    "scm.autoReveal": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "./src/assets/sass/",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "emmet.showSuggestionsAsSnippets": true
 }

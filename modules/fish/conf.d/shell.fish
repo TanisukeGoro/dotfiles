@@ -2,8 +2,8 @@ if type -q fzf and type -q rg
     set -x FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 end
 
-if type -q exa
-    alias ls 'exa'
+if type -q eza
+    alias ls 'eza'
 end
 
 if type -q bat

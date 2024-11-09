@@ -1,7 +1,7 @@
 DOT_SOURCES = $(wildcard $(MODULE_DIR)/*/dot.*)
 
-# CORE_CLEAN_TARGETS += dot-clean
-# CORE_TARGETS += dot-install
+DOT_TARGETS += dot-install
+DOT_CLEAN_TARGETS += dot-clean
 
 define dot-rule
 DOT_TARGETS += $1

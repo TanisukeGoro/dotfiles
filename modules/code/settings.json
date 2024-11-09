@@ -745,5 +745,5 @@
             "savePathReplacementPairs": null
         }
     ],
-    "emmet.showSuggestionsAsSnippets": true
+    "emmet.showSuggestionsAsSnippets": true,
 }

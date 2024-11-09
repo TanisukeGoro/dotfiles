@@ -16,6 +16,9 @@
 	fixit=commit --amend --no-edit
 	bc = "!f() { branch | grep -v \"master\\|main\\|develop\" | xargs git branch -D }; f"
 
+[ghq]
+	root=/Volumes/workspace/ghq
+
 [user]
 	name = okita kamegoro
 	mail = keisi1100525@outlook.jp

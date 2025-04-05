@@ -5,4 +5,5 @@ if type -q fish
     # nix devenv でのログを非表示
     set -gx DIRENV_LOG_FORMAT ""
     eval (direnv hook fish)
+    set -x OBJC_DISABLE_INITIALIZE_FORK_SAFETY YES
 end

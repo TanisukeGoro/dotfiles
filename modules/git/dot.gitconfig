@@ -17,7 +17,7 @@
 	bc = "!f() { branch | grep -v \"master\\|main\\|develop\" | xargs git branch -D }; f"
 
 [ghq]
-	root=/Volumes/workspace/ghq
+	root=~/ghq
 
 [user]
 	name = okita kamegoro
